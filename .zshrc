@@ -94,7 +94,7 @@ export PATH="/usr/local/bin:$PATH:/usr/local/sbin:$HOME/local/bin:$HOME/work/bin
 
 #rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
-if [ $(which rbenv) ]; then
+if [ -e "$(which rbenv)" ]; then
     eval "$(rbenv init -)"
 fi
 
