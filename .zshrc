@@ -4,6 +4,7 @@
 export TERM=xterm-256color
 export EDITOR=emacs      # エディタをvimに設定
 export LANG=ja_JP.UTF-8  # 文字コードをUTF-8に設定
+export LC_ALL=ja_JP.UTF-8  # 文字コードをUTF-8に設定
 
 bindkey -e               # キーバインドをemacsモードに設定
 
