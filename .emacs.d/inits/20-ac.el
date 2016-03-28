@@ -1,5 +1,6 @@
 (require 'auto-complete)
 (require 'auto-complete-config)
+(require 'go-autocomplete)
 (require 'fuzzy)
 (ac-config-default)
 (ac-set-trigger-key "TAB")

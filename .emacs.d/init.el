@@ -30,6 +30,10 @@
 (el-get-bundle elpa:fuzzy)
 (el-get-bundle cedet)
 
+;; go
+(el-get-bundle go-mode)
+(el-get-bundle go-autocomplete)
+
 ;; C
 (el-get-bundle dtrt-indent)
 (el-get-bundle auto-complete-clang-async)

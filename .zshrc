@@ -114,6 +114,7 @@ export LESS='-R'
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-### gopath
+### go
+export PATH=/usr/local/go/bin:$PATH
 export GOPATH=$HOME/go
 export PATH="$HOME/go/bin:$PATH"
