@@ -251,6 +251,15 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place you code here."
+  ;; Kill with \n
+  (setq kill-whole-line t)
+
+  (eval-after-load "helm-gtags"
+    '(progn
+       (define-key helm-gtags-mode-map (kbd "M-t") 'helm-gtags-find-tag)
+       (define-key helm-gtags-mode-map (kbd "M-r") 'helm-gtags-find-rtag)
+       (define-key helm-gtags-mode-map (kbd "M-s") 'helm-gtags-find-symbol)
+       (define-key helm-gtags-mode-map (kbd "C-t") 'helm-gtags-pop-stack)))
 
   ;; other window
   (defun other-window-or-split ()
