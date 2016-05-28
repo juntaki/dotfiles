@@ -112,3 +112,6 @@ export PATH="$HOME/go/bin:$PATH"
 TZ='Asia/Tokyo'; export TZ
 
 export PATH=/opt/emacs/bin:$PATH
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
