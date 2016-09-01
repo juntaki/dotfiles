@@ -24,7 +24,7 @@ pyenv rehash
 # golang
 set -x GOPATH $HOME/.go
 set -x GOBIN $GOPATH/bin
-set -x PATH $HOME/go/bin $PATH
+set -x PATH $HOME/.go/bin $PATH
 
 # emacs
 alias emacsclient 'emacsclient -t'
