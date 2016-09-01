@@ -22,7 +22,8 @@ set -x PATH $PYENV_ROOT/versions/anaconda3-4.1.0/bin/ $PATH
 pyenv rehash
 
 # golang
-set -x GOPATH $HOME/go
+set -x GOPATH $HOME/.go
+set -x GOBIN $GOPATH/bin
 set -x PATH $HOME/go/bin $PATH
 
 # emacs
