@@ -8,8 +8,6 @@ set -x LANG ja_JP.UTF-8
 set -x LC_ALL ja_JP.UTF-8
 set -x TZ 'Asia/Tokyo'
 
-set -x PATH $HOME/local/bin $PATH
-
 # rbenv
 set -x RBENV_ROOT $HOME/.rbenv
 set -x PATH $RBENV_ROOT/bin $PATH
