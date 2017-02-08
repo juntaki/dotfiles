@@ -1,12 +1,13 @@
 # ------------------------------
 # General Settings
 # ------------------------------
-stty stop undef
+
 set -x TERM xterm-256color
 set -x EDITOR emacs
 set -x LANG ja_JP.UTF-8
 set -x LC_ALL ja_JP.UTF-8
 set -x TZ 'Asia/Tokyo'
+set -x PATH $HOME/local/bin $PATH
 
 # rbenv
 set -x RBENV_ROOT $HOME/.rbenv
@@ -24,6 +25,7 @@ pyenv rehash >/dev/null ^&1
 # golang
 set -x GOPATH $HOME/.go
 set -x GOBIN $GOPATH/bin
+set -x PATH /usr/local/go/bin $PATH
 set -x PATH $HOME/.go/bin $PATH
 
 # emacs
@@ -33,3 +35,6 @@ alias emacs 'emacs -nw'
 
 # ghq
 alias g 'ghq list -p | peco | read line; builtin cd $line'
+
+# js
+source ~/.config/fish/nvm-wrapper/nvm.fish
